@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 if [ -t 0 ]; then 
 	>&2 echo This script must be run with a file or pipe as stdin

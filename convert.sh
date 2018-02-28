@@ -9,7 +9,7 @@ fi
 #cat > input.eml
 
 # Now convert that file to html
-mhonarc -single -rcfile /mhonarc.rc /vol/$1 > /tmp/input.html
+mhonarc -single -rcfile /mhonarc.rc "/vol/$1" > /tmp/input.html
 
 # And finally convert to PDF
 wkhtmltopdf /tmp/input.html /tmp/output.pdf >/dev/null
